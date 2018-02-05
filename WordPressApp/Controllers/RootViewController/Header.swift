@@ -9,6 +9,7 @@
 import UIKit
 
 class Header: UITableViewHeaderFooterView {
+
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
         setupViews()
@@ -22,7 +23,9 @@ class Header: UITableViewHeaderFooterView {
         let label = UILabel()
         label.text = "My header"
         label.textAlignment = .center
-        label.backgroundColor = .red
+        let customLightGray = UIColor(r: 236, g: 236, b: 236, alpha: 1)
+        label.backgroundColor = customLightGray
+        label.textColor = .orange
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

@@ -11,5 +11,9 @@ import UIKit
 struct PostObject {
     let title: String
     let excerpt: String
+    let postPicture: UIImage
+    let authorName: String
     let authorPicture: UIImage
+    let postDate: String
 }
+

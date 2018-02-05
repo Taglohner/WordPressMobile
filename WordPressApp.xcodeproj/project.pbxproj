@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E741BBF0202908E100279E93 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E741BBEF202908E100279E93 /* TabBarController.swift */; };
+		E741BBF32029095800279E93 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E741BBF22029095800279E93 /* BookmarksViewController.swift */; };
+		E741BBF62029097E00279E93 /* BookmarksFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E741BBF52029097E00279E93 /* BookmarksFirstCell.swift */; };
 		E7F449982022630100061E52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F449972022630100061E52 /* AppDelegate.swift */; };
 		E7F4499A2022630100061E52 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F449992022630100061E52 /* RootViewController.swift */; };
 		E7F449A22022630100061E52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F449A12022630100061E52 /* Assets.xcassets */; };
 		E7F449A52022630100061E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F449A32022630100061E52 /* LaunchScreen.storyboard */; };
 		E7F449AD2022635C00061E52 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F449AC2022635C00061E52 /* Extensions.swift */; };
-		E7F449AF2022649400061E52 /* FirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F449AE2022649400061E52 /* FirstCell.swift */; };
+		E7F449AF2022649400061E52 /* RootFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F449AE2022649400061E52 /* RootFirstCell.swift */; };
 		E7F449B1202264C100061E52 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F449B0202264C100061E52 /* Header.swift */; };
 		E7F449B620226A1600061E52 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7F449A62022630100061E52 /* Info.plist */; };
 		E7F449BF20276D1100061E52 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F449BE20276D1100061E52 /* Post.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E741BBEF202908E100279E93 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E741BBF22029095800279E93 /* BookmarksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		E741BBF52029097E00279E93 /* BookmarksFirstCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksFirstCell.swift; sourceTree = "<group>"; };
 		E7F449942022630100061E52 /* WordPressApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordPressApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F449972022630100061E52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7F449992022630100061E52 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +33,7 @@
 		E7F449A42022630100061E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7F449A62022630100061E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7F449AC2022635C00061E52 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		E7F449AE2022649400061E52 /* FirstCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCell.swift; sourceTree = "<group>"; };
+		E7F449AE2022649400061E52 /* RootFirstCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootFirstCell.swift; sourceTree = "<group>"; };
 		E7F449B0202264C100061E52 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		E7F449BE20276D1100061E52 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		E7F449C02027721800061E52 /* RootViewController - DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootViewController - DataSource.swift"; sourceTree = "<group>"; };
@@ -44,6 +50,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E741BBF1202908EF00279E93 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E741BBEF202908E100279E93 /* TabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		E741BBF42029095D00279E93 /* BookmarksViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E741BBF22029095800279E93 /* BookmarksViewController.swift */,
+				E741BBF52029097E00279E93 /* BookmarksFirstCell.swift */,
+			);
+			path = BookmarksViewController;
+			sourceTree = "<group>";
+		};
 		E7F4498B2022630100061E52 = {
 			isa = PBXGroup;
 			children = (
@@ -76,7 +99,7 @@
 			children = (
 				E7F449992022630100061E52 /* RootViewController.swift */,
 				E7F449C02027721800061E52 /* RootViewController - DataSource.swift */,
-				E7F449AE2022649400061E52 /* FirstCell.swift */,
+				E7F449AE2022649400061E52 /* RootFirstCell.swift */,
 				E7F449B0202264C100061E52 /* Header.swift */,
 			);
 			path = RootViewController;
@@ -85,7 +108,9 @@
 		E7F449B32022662F00061E52 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E741BBF1202908EF00279E93 /* TabBarController */,
 				E7F449B22022661500061E52 /* RootViewController */,
+				E741BBF42029095D00279E93 /* BookmarksViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,13 +214,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E741BBF32029095800279E93 /* BookmarksViewController.swift in Sources */,
 				E7F4499A2022630100061E52 /* RootViewController.swift in Sources */,
+				E741BBF0202908E100279E93 /* TabBarController.swift in Sources */,
 				E7F449982022630100061E52 /* AppDelegate.swift in Sources */,
 				E7F449AD2022635C00061E52 /* Extensions.swift in Sources */,
 				E7F449C12027721800061E52 /* RootViewController - DataSource.swift in Sources */,
 				E7F449BF20276D1100061E52 /* Post.swift in Sources */,
 				E7F449B1202264C100061E52 /* Header.swift in Sources */,
-				E7F449AF2022649400061E52 /* FirstCell.swift in Sources */,
+				E741BBF62029097E00279E93 /* BookmarksFirstCell.swift in Sources */,
+				E7F449AF2022649400061E52 /* RootFirstCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

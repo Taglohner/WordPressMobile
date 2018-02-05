@@ -19,7 +19,7 @@ extension RootViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FirstCell", for: indexPath) as! FirstCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RootFirstCell", for: indexPath) as! RootFirstCell
         let post = postArray[indexPath.row]
         cell.post = post
         return cell
