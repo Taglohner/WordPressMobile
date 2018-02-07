@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E72999EA202A565300CC1D61 /* MoreCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72999E9202A565300CC1D61 /* MoreCollectionViewController.swift */; };
+		E72999EC202A567100CC1D61 /* MoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72999EB202A567100CC1D61 /* MoreCollectionViewCell.swift */; };
+		E72999EE202A59C200CC1D61 /* MoreCollectionViewController + DelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72999ED202A59C200CC1D61 /* MoreCollectionViewController + DelegateFlowLayout.swift */; };
+		E72999F0202A66B100CC1D61 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72999EF202A66B100CC1D61 /* Categories.swift */; };
 		E741BBF0202908E100279E93 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E741BBEF202908E100279E93 /* TabBarController.swift */; };
 		E741BBF32029095800279E93 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E741BBF22029095800279E93 /* BookmarksViewController.swift */; };
 		E741BBF62029097E00279E93 /* BookmarksFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E741BBF52029097E00279E93 /* BookmarksFirstCell.swift */; };
@@ -19,10 +23,14 @@
 		E7F449B1202264C100061E52 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F449B0202264C100061E52 /* Header.swift */; };
 		E7F449B620226A1600061E52 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7F449A62022630100061E52 /* Info.plist */; };
 		E7F449BF20276D1100061E52 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F449BE20276D1100061E52 /* Post.swift */; };
-		E7F449C12027721800061E52 /* RootViewController - DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F449C02027721800061E52 /* RootViewController - DataSource.swift */; };
+		E7F449C12027721800061E52 /* RootViewController + DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F449C02027721800061E52 /* RootViewController + DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E72999E9202A565300CC1D61 /* MoreCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionViewController.swift; sourceTree = "<group>"; };
+		E72999EB202A567100CC1D61 /* MoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		E72999ED202A59C200CC1D61 /* MoreCollectionViewController + DelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoreCollectionViewController + DelegateFlowLayout.swift"; sourceTree = "<group>"; };
+		E72999EF202A66B100CC1D61 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		E741BBEF202908E100279E93 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E741BBF22029095800279E93 /* BookmarksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
 		E741BBF52029097E00279E93 /* BookmarksFirstCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksFirstCell.swift; sourceTree = "<group>"; };
@@ -36,7 +44,7 @@
 		E7F449AE2022649400061E52 /* RootFirstCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootFirstCell.swift; sourceTree = "<group>"; };
 		E7F449B0202264C100061E52 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		E7F449BE20276D1100061E52 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		E7F449C02027721800061E52 /* RootViewController - DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootViewController - DataSource.swift"; sourceTree = "<group>"; };
+		E7F449C02027721800061E52 /* RootViewController + DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootViewController + DataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +58,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E72999E8202A559500CC1D61 /* MoreCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E72999E9202A565300CC1D61 /* MoreCollectionViewController.swift */,
+				E72999ED202A59C200CC1D61 /* MoreCollectionViewController + DelegateFlowLayout.swift */,
+				E72999EB202A567100CC1D61 /* MoreCollectionViewCell.swift */,
+			);
+			path = MoreCollectionViewController;
+			sourceTree = "<group>";
+		};
 		E741BBF1202908EF00279E93 /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				E7F449992022630100061E52 /* RootViewController.swift */,
-				E7F449C02027721800061E52 /* RootViewController - DataSource.swift */,
+				E7F449C02027721800061E52 /* RootViewController + DataSource.swift */,
 				E7F449AE2022649400061E52 /* RootFirstCell.swift */,
 				E7F449B0202264C100061E52 /* Header.swift */,
 			);
@@ -111,6 +129,7 @@
 				E741BBF1202908EF00279E93 /* TabBarController */,
 				E7F449B22022661500061E52 /* RootViewController */,
 				E741BBF42029095D00279E93 /* BookmarksViewController */,
+				E72999E8202A559500CC1D61 /* MoreCollectionViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -138,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				E7F449BE20276D1100061E52 /* Post.swift */,
+				E72999EF202A66B100CC1D61 /* Categories.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,14 +235,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E741BBF32029095800279E93 /* BookmarksViewController.swift in Sources */,
+				E72999F0202A66B100CC1D61 /* Categories.swift in Sources */,
 				E7F4499A2022630100061E52 /* RootViewController.swift in Sources */,
 				E741BBF0202908E100279E93 /* TabBarController.swift in Sources */,
 				E7F449982022630100061E52 /* AppDelegate.swift in Sources */,
 				E7F449AD2022635C00061E52 /* Extensions.swift in Sources */,
-				E7F449C12027721800061E52 /* RootViewController - DataSource.swift in Sources */,
+				E72999EC202A567100CC1D61 /* MoreCollectionViewCell.swift in Sources */,
+				E7F449C12027721800061E52 /* RootViewController + DataSource.swift in Sources */,
+				E72999EE202A59C200CC1D61 /* MoreCollectionViewController + DelegateFlowLayout.swift in Sources */,
 				E7F449BF20276D1100061E52 /* Post.swift in Sources */,
 				E7F449B1202264C100061E52 /* Header.swift in Sources */,
 				E741BBF62029097E00279E93 /* BookmarksFirstCell.swift in Sources */,
+				E72999EA202A565300CC1D61 /* MoreCollectionViewController.swift in Sources */,
 				E7F449AF2022649400061E52 /* RootFirstCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
