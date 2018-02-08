@@ -33,7 +33,6 @@ class RootViewController: UITableViewController {
         tableView.refreshControl = topRefreshControl
         tableView.separatorStyle = .none
         tableView.sectionHeaderHeight = 28
-        navigationController?.title = "RootViewController"
         tableView.register(RootFirstCell.self, forCellReuseIdentifier: "RootFirstCell")
         tableView.register(Header.self, forHeaderFooterViewReuseIdentifier: "RootHeader")
     }

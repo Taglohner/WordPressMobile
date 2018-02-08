@@ -68,9 +68,6 @@ class MoreCollectionViewController: UIViewController, UICollectionViewDataSource
         cell.backgroundColor = .orange
         return cell
     }
-    
-
- 
 
     // MARK: UICollectionViewDelegate
 
