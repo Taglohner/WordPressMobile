@@ -15,13 +15,24 @@ extension FeaturedTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return postArray.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FeaturedFirstCell", for: indexPath) as! FeaturedTableViewCell
-
-        return cell
+    
+        var post = postArray[indexPath.row]
+        
+        if indexPath.item == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FeaturedFirstCell", for: indexPath) as! FeaturedTableCollectionViewCell
+            return cell
+        }
+        
+        if post.isFeatured == false {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BaseCell", for: indexPath) as! BaseTableViewCell
+            return cell
+        }
+        
+        return UITableViewCell()
     }
     
 

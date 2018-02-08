@@ -29,10 +29,8 @@ class RootFirstCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         self.selectionStyle = .none
-        
         let customLightGray = UIColor(r: 236, g: 236, b: 236, alpha: 1)
         self.backgroundColor = customLightGray
-        
         
         setupViews()
     }

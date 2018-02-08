@@ -16,8 +16,7 @@
 		E741BBF62029097E00279E93 /* BookmarksFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E741BBF52029097E00279E93 /* BookmarksFirstCell.swift */; };
 		E7584930202BA67700002C81 /* FeaturedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E758492F202BA67700002C81 /* FeaturedTableViewController.swift */; };
 		E7584933202BA78800002C81 /* FeaturedTableViewController + DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7584932202BA78800002C81 /* FeaturedTableViewController + DataSource.swift */; };
-		E7584937202BA84700002C81 /* FeaturedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7584936202BA84700002C81 /* FeaturedTableViewCell.swift */; };
-		E7584939202CD32400002C81 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7584938202CD32400002C81 /* FeaturedCollectionViewCell.swift */; };
+		E7584937202BA84700002C81 /* FeaturedTableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7584936202BA84700002C81 /* FeaturedTableCollectionViewCell.swift */; };
 		E758493D202CD84600002C81 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E758493C202CD84600002C81 /* BaseTableViewCell.swift */; };
 		E7F449982022630100061E52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F449972022630100061E52 /* AppDelegate.swift */; };
 		E7F4499A2022630100061E52 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F449992022630100061E52 /* RootViewController.swift */; };
@@ -41,8 +40,7 @@
 		E741BBF52029097E00279E93 /* BookmarksFirstCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksFirstCell.swift; sourceTree = "<group>"; };
 		E758492F202BA67700002C81 /* FeaturedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTableViewController.swift; sourceTree = "<group>"; };
 		E7584932202BA78800002C81 /* FeaturedTableViewController + DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedTableViewController + DataSource.swift"; sourceTree = "<group>"; };
-		E7584936202BA84700002C81 /* FeaturedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTableViewCell.swift; sourceTree = "<group>"; };
-		E7584938202CD32400002C81 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
+		E7584936202BA84700002C81 /* FeaturedTableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTableCollectionViewCell.swift; sourceTree = "<group>"; };
 		E758493C202CD84600002C81 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		E7F449942022630100061E52 /* WordPressApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordPressApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F449972022630100061E52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,9 +98,8 @@
 			children = (
 				E758492F202BA67700002C81 /* FeaturedTableViewController.swift */,
 				E7584932202BA78800002C81 /* FeaturedTableViewController + DataSource.swift */,
-				E7584936202BA84700002C81 /* FeaturedTableViewCell.swift */,
+				E7584936202BA84700002C81 /* FeaturedTableCollectionViewCell.swift */,
 				E758493C202CD84600002C81 /* BaseTableViewCell.swift */,
-				E7584938202CD32400002C81 /* FeaturedCollectionViewCell.swift */,
 			);
 			path = FeaturedTableViewController;
 			sourceTree = "<group>";
@@ -272,10 +269,9 @@
 				E7F449BF20276D1100061E52 /* Post.swift in Sources */,
 				E7F449B1202264C100061E52 /* Header.swift in Sources */,
 				E741BBF62029097E00279E93 /* BookmarksFirstCell.swift in Sources */,
-				E7584939202CD32400002C81 /* FeaturedCollectionViewCell.swift in Sources */,
 				E72999EA202A565300CC1D61 /* MoreCollectionViewController.swift in Sources */,
 				E7F449AF2022649400061E52 /* RootFirstCell.swift in Sources */,
-				E7584937202BA84700002C81 /* FeaturedTableViewCell.swift in Sources */,
+				E7584937202BA84700002C81 /* FeaturedTableCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

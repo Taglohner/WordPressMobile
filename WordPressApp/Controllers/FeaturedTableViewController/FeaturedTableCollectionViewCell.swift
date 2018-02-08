@@ -1,5 +1,5 @@
 //
-//  FeaturedTableViewCell.swift
+//  FeaturedTableCollectionViewCell.swift
 //  WordPressApp
 //
 //  Created by Steven Taglohner on 07/02/2018.
@@ -8,7 +8,13 @@
 
 import UIKit
 
-class FeaturedTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class FeaturedTableCollectionViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+//    var post: PostObject? {
+//        didSet{
+//            
+//        }
+//    }
     
     fileprivate let cellId = "featuredCell"
 
@@ -37,7 +43,7 @@ class FeaturedTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColl
         
         backgroundColor = .black
         addSubview(featuredCollectionView)
-
+        
         featuredCollectionView.delegate = self
         featuredCollectionView.dataSource = self
         featuredCollectionView.register(FeaturedCollectionViewCell.self, forCellWithReuseIdentifier: "featuredCell")
@@ -52,6 +58,7 @@ class FeaturedTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! FeaturedCollectionViewCell
+        
         return cell
     }
     
@@ -65,6 +72,29 @@ class FeaturedTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColl
         return UIEdgeInsetsMake(0, 14, 0, 14)
     }
 }
+
+class FeaturedCollectionViewCell: UICollectionViewCell {
+    
+    //    var post: PostObject? {
+    //        didSet{
+    //
+    //        }
+    //    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupViews()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupViews() {
+        backgroundColor = .red
+    }
+}
+
 
 
 

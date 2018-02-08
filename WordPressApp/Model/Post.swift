@@ -15,5 +15,6 @@ struct PostObject {
     let authorName: String
     let authorPicture: UIImage
     let postDate: String
+    let isFeatured: Bool
 }
 
