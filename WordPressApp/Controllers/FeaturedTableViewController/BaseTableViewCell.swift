@@ -10,17 +10,16 @@ import UIKit
 
 class BaseTableViewCell: UITableViewCell {
     
-//    var post: PostObject? {
-//        didSet {
-//            
-//            guard let post = post else {
-//                return
-//            }
-//            postImage.image = post.postPicture
-//            postTitle.text = post.title
-//            postDate.text = post.postDate
-//        }
-//    }
+    var categories: Category? {
+        didSet {
+            
+            guard let categories = categories else {
+                return
+            }
+            
+            
+        }
+    }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

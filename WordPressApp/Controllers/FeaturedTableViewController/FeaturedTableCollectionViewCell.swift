@@ -9,18 +9,18 @@
 import UIKit
 
 class FeaturedTableCollectionViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    
-//    var post: PostObject? {
-//        didSet{
-//            
-//        }
-//    }
-    
+
+    var categories: Category? {
+        didSet{
+
+            
+        }
+    }
+
     fileprivate let cellId = "featuredCell"
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
         setupViews()
     }
     
@@ -53,7 +53,10 @@ class FeaturedTableCollectionViewCell: UITableViewCell, UICollectionViewDataSour
     // Data Source
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 100
+        if let count = categories?.business?.count {
+            return count
+        }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

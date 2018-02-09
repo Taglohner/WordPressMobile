@@ -23,19 +23,17 @@ extension FeaturedTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    
-//        if indexPath.item == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "FeaturedFirstCell", for: indexPath) as! FeaturedTableCollectionViewCell
-            return cell
-//        }
-//
-//        if post.isFeatured == false {
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "BaseCell", for: indexPath) as! BaseTableViewCell
-//            return cell
-//        }
         
-//        return UITableViewCell()
+        if indexPath.item == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FeaturedFirstCell", for: indexPath) as! FeaturedTableCollectionViewCell
+            cell.categories = categories?[indexPath.row]
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BaseCell", for: indexPath) as! BaseTableViewCell
+            cell.categories = categories?[indexPath.row]
+            return cell
+        }
     }
     
-
+    
 }
